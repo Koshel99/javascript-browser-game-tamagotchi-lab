@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Tamagotchi</h1>
+      <p>Survival Mode: Keep Your Tamagotchi Happy for 1 Minute! If any need reaches 5, it's game over!</p>
+      <div class="Name">
+        <h5>Name Your Tamagotchi: 
+            <input id="name-input" type="text" placeholder="Enter Name" required>
+            <button id="submit-button">submit</button>
+        </h5> 
+        <p id="name-display">Tamagotchi's Name: ...</p>
+        <p id="countdown">Time Left: </p>
+      </div>
+    </header>
+    <main>
+
+      <!-- game interface / UI section -->
+      <section class="button-wrapper">
+        <button id="party">Party</button>
+        <button id="munch">Munch</button>
+        <button id="sleep">Zzz</button>
+        <button id="work">Hustle</button>
+      </section>
+
+      <!-- game data section -->
+      <section class="stats-wrapper">
+        <p>Kill Myself Meter: 
+          <span id="boredom-stat">...</span>
+        </p>
+        <p>Belly Buzz: 
+          <span id="hunger-stat">...</span>
+        </p>
+        <p>Yawning Level:
+          <span id="sleepiness-stat">...</span>
+        </p>
+        <p>Brookness:
+            <span id="brokeness-stat">...</span>
+          </p>
+      </section>
+
+      <!-- game display / messaging section -->
+      <section class="game-state-wrapper">
+        <h2 id="message" class="hidden">
+          Oh no! You Lose!
+        </h2>
+        <img 
+        class="game-graphic" 
+        alt="Tamagotchi Image" 
+        src="assets/tamagotchi-girl.webp" 
+      />
+        <button id="restart" class="hidden">Play Again</button>
+        <button id="startButton" class="hidden">Start Game</button>
+      </section>
+      
+    </main>
+  </body>
+</html>

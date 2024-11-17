@@ -1,0 +1,110 @@
+/* global styles  */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    min-height: 100vh;
+    background-color: #b65f9a4f;
+    font-family: system-ui, sans-serif;
+  }
+  
+  /* element styles */
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 1.7rem;
+  }
+  
+  /* headings */
+  header {
+    text-align: center;
+  }
+  
+  /* layout */
+  main {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .stats-wrapper {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .game-state-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* button styling*/
+  button {
+    padding: 1.5rem;
+    line-height: 1em;
+    font-size: 1.5rem;
+  
+    border: 0;
+    border-radius: 0.5rem;
+    
+    color: white;
+    background-color: #a29f9f;
+    transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0e0e0e;
+  }
+  
+  button:active {
+    background-color: #2e6bb6;
+  }
+  
+  /* images */
+  .game-graphic {
+    max-height: 30vmin;
+    margin-bottom: 32px;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  #restart,
+  #startButton,
+  #submit-button{
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 4px 10px;
+    background-color: white;
+    color: black;
+    border: 1px dotted black;
+  }
+
+  #restart,
+  #startButton,
+  #submit-button:hover {
+    background-color: #db4dee;
+  }
+
+  #restart,
+  #startButton,
+  #submit-button:active {
+    background-color: #2e6bb6;
+  }
+  
+
